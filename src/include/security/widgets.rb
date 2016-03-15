@@ -276,7 +276,7 @@ module Yast
         # but could be XDM,WDM,ENTRANCE,CONSOLE
         "Label"   => _(
           "&Shutdown Behaviour of %s Login Manager:"
-        ) % @display_manager.name,
+        ) % @display_manager.name.upcase,
         "Options" => shutdown_options,
         "Value"   => @display_manager.shutdown_default_value
       }
